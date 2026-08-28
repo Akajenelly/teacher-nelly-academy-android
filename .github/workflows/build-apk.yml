@@ -37,7 +37,7 @@ jobs:
       - name: Prepare app icon
         run: |
           mkdir -p app/src/main/res/drawable
-          cp app-icon.png app/src/main/res/drawable/app_icon.png
+          cp academy-icon.png app/src/main/res/drawable/app_icon.png
 
       - name: Build APK
         run: gradle assembleDebug --no-daemon
