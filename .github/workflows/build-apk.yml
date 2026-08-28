@@ -35,8 +35,13 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build APK
-        run: ./gradlew assembleDebug
+      - name: Prepare app icon
+  run: |
+    mkdir -p app/src/main/res/drawable
+    cp app-icon.png app/src/main/res/drawable/app_icon.png
+
+- name: Build APK
+  run: ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
