@@ -6,6 +6,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "TeacherNellyAcademy"
+rootProject.name = 'TeacherNellyAcademy'
 
 include ':app'
