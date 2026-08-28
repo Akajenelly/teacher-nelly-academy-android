@@ -1,6 +1,4 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.application'
 
 android {
     namespace 'com.teachernelly.younglearners'
@@ -11,12 +9,6 @@ android {
         minSdk 23
         targetSdk 35
         versionCode 1
-        versionName "1.0"
-    }
-
-    sourceSets {
-        main {
-            res.srcDirs = ['src/main/res']
-        }
+        versionName '1.0'
     }
 }
