@@ -1,22 +1,17 @@
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace 'com.teachernelly.younglearners'
-    compileSdk 35
-
-    defaultConfig {
-        applicationId 'com.teachernelly.younglearners'
-        minSdk 23
-        targetSdk 35
-        versionCode 1
-        versionName "1.0"
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
     }
 
-    sourceSets {
-        main {
-            res.srcDirs = ['src/main/res']
-        }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
     }
 }
