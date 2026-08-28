@@ -21,6 +21,7 @@
 
         </activity>
 
-    </application>
+    <application
+    android:icon="@drawable/app_icon"
 
 </manifest>
